@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Spacing="20"
+            Padding="20,10"
+            VerticalOptions="Center">
+
+            <Image
+                Source="openaimicrosoft.jpg"
+                SemanticProperties.Description="Cute dot net bot waving hi to you!"
+                HeightRequest="75"
+                HorizontalOptions="Center" />
+           
+            <!--<Label
+                Text="Hello, World!"
+                SemanticProperties.HeadingLevel="Level1"
+                FontSize="32"
+                HorizontalOptions="Center" />
+
+            <Label
+                Text="Welcome to .NET Multi-platform App UI"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="Welcome to dot net Multi platform App U I"
+                FontSize="18"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="CounterBtn"
+                Text="Click me"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked"
+                HorizontalOptions="Center" />
+
+            <Button
+                x:Name="CounterBtn1"
+                Text="Click me"
+                SemanticProperties.Hint="Counts the number of times you click"
+                Clicked="OnCounterClicked1"
+                HorizontalOptions="Center" />-->
+
+            <Border Stroke="#C49B33"
+                StrokeThickness="4"
+                Background="#ebe9f2"
+                Padding="15,10"
+                HorizontalOptions="Center">
+                        <Entry
+                        x:Name="EnterQuestion"
+                        Placeholder="Ask ChatGPT a Question "
+                        HorizontalOptions="Center" />
+            </Border>
+            
+            <Button
+                x:Name="CallApi"
+                Text="Post your Question"
+                SemanticProperties.Hint="CallApi"
+                Clicked="OnCallApi"
+                HorizontalOptions="Center" />
+
+            <!--Label
+                x:Name="DisplayInput"
+                Text="DisplayInput"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="DisplayInput"
+                FontSize="18"
+                HorizontalOptions="Center" /-->
+
+            <Border Stroke="#C49B33"
+                StrokeThickness="4"
+                Background="#ebe9f2"
+                Padding="10,10"
+                HorizontalOptions="Center">
+                <Label
+                x:Name="DisplayResuts"
+                Text="display results"
+                SemanticProperties.HeadingLevel="Level2"
+                SemanticProperties.Description="display results"
+                FontSize="15"
+                HorizontalOptions="Center" />
+            </Border>
+
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
